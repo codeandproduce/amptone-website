@@ -20,7 +20,7 @@ body{
 	background-color:transparent;
 	z-index:100;
 }
-#animateIsFuckingStupid{
+#animateStu{
 	width:100%;
 	z-index:99;
 	position:fixed;
@@ -54,7 +54,7 @@ body{
 	background-position: center;
 }
 .carousel-inner{
-	background-image:url('img/img2.jpg');
+	background-image:url('../img/img2.jpg');
 	background-position: center;
 	background-size:cover;
 	background-repeat: no-repeat;

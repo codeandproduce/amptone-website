@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 	});
 
-
+	docHeight = $(window);
 
 });
 
@@ -59,8 +59,9 @@ function bringNavUp(){
 }
 
 $("#navBack").click(function(){
+	var top1 = docHeight*-2;
 	$("#toggleNav").animate({
-		top: docHeight*-2,
+		top: top1,
 		bottom:0,
 		opacity:0
 	},1000);
@@ -75,7 +76,7 @@ $(window).scroll(function(){
 	var scroll = $(window).scrollTop();
 	if(scroll > 0){
 		if(!done){
-		$("#animateIsFuckingStupid").animate({
+		$("#animateStu").animate({
 			backgroundColor: "#FFF",
 			opacity: 1.0
 		},500);
@@ -91,8 +92,7 @@ $(window).scroll(function(){
 		done = true;
 		}
 	}else{
-		console.log(scroll);
-		$("#animateIsFuckingStupid").animate({
+		$("#animateStu").animate({
 			opacity: 0.0
 		},500);
 		$("#navBar").children().children().animate({
