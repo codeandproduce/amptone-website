@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap Carousel</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/toggle.css">
+	</head>
+	
+	
+	<body>
+		<div id="navBar">
+			<div class="container">
+				<a href="#" class="navbar-brand">Boot</a>
+				<button id="toggle" class="navbar-toggle" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>				
+				</button>
+				<a href="#" id="menuText">Menu</a>
+			</div>
+		</div>
+		<div id="toggleNav">
+			<div class="togggle-content">
+				<div class="toggle-back">
+					
+					<button id="navBack"><img src="img/arrow.png" class="arrow"></img><p>BACK</p></button>
+				</div>
+				<div class="toggle-navigation col-md-6">
+					<div class="toggle-title">
+						<h1>NAVIGATION</h1>
+						<div class="line"></div>
+					</div>
+					<div class="navigation-content">
+						<ol>
+							<li><a class="active" href="#">HOME</a></li>
+							<li><a href="#">ARTISTS</a></li>
+							<li><a href="#">RELEASES</a></li>
+							<li><a href="#">EVENTS</a></li>
+							<li><a href="#">MERCH</a></li>
+							<li><a href="#">CONTACT</a></li>
+						</uo>
+					</div>
+				</div>
+				<div class="toggle-subscribe col-md-6">
+					<div class="toggle-title">
+						<h1>SUBSCRIBE</h1>
+						<div class="line"></div>
+					</div>
+					<div class="subscribe-contain">
+						<ol>
+							<li><p>Subscribe to be the first to know for new releases and events. <span class="wrong">Please fill out the correct information</span></p></li>
+							<li><input placeholder="myemail@amptone.com" type="email"></li>
+							<li class="termsLI"><a href="#">TERMS</a></li>
+							<li class="buttonLI"><button>SUBMIT</button></li>
+						</ol>
+					</div>
+				</div>
+				<div class="toggle-follow col-md-6">
+					<div class="toggle-title">
+						<h1>FOLLOW US</h1>
+						<div class="line"></div>
+					</div>
+					<div class="follow-contain">
+						<ol>
+							<li><a href="#" class="aicon"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="aicon"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="aicon"><i class="fa fa-youtube"></i></a></li>
+							<li><a href="#" class="aicon"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="aicon"><i class="fa fa-snapchat-ghost"></i></a></li>
+							<li><a href="#" class="aicon"><i class="fa fa-soundcloud"></i></a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="animateIsFuckingStupid">
+		</div>
+		
+		
+		<div class="container">
+			<div id="mycarousel" class="carousel slide">
+				<ol class="carousel-indicators">
+					<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#mycarousel" data-slide-to="1"></li>
+				</ol>
+				<div class="carousel-inner">
+						<!--the actual sldies-->
+						<div class="item active">
+							<div class="carousel-caption">
+								<h3>AMPTONE CONCERT<br/>MAY 21st </h3>
+								<button class="bun">Learn more</button>
+							</div>
+							<div class="tint"></div>
+						</div>
+						<div class="item">
+							<div class="carousel-caption">
+								<h3 class="one">Keep updated!<br/> </h3>
+								<button class="bun">Subscribe</button>
+							</div>
+							<div class="tint"></div>
+						</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="container contain">
+			<div class="row">
+				<div class="col-md-4">
+					<h2>First Title</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu rutrum libero, porttitor dictum felis. Ut id velit dolor. Quisque ac elit malesuada, molestie enim a, commodo nulla. Donec consectetur consectetur varius. Pellentesque dictum, mi sed rhoncus fringilla, massa ligula varius neque, eget accumsan libero quam non nulla. Nam iaculis mattis auctor. Fusce id cursus ipsum. Etiam finibus orci sit amet massa varius, in bibendum lorem luctus. Vestibulum vel massa non magna porttitor ornare. Nullam euismod a augue non malesuada.</p>
+						<a class="btn-btn-default">Read more</a>
+				</div>
+				<div class="col-md-4">
+					<h2>First Title</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu rutrum libero, porttitor dictum felis. Ut id velit dolor. Quisque ac elit malesuada, molestie enim a, commodo nulla. Donec consectetur consectetur varius. Pellentesque dictum, mi sed rhoncus fringilla, massa ligula varius neque, eget accumsan libero quam non nulla. Nam iaculis mattis auctor. Fusce id cursus ipsum. Etiam finibus orci sit amet massa varius, in bibendum lorem luctus. Vestibulum vel massa non magna porttitor ornare. Nullam euismod a augue non malesuada.</p>
+						<a class="btn-btn-default">Read more</a>
+				</div>
+				<div class="col-md-4">
+					<h2>First Title</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu rutrum libero, porttitor dictum felis. Ut id velit dolor. Quisque ac elit malesuada, molestie enim a, commodo nulla. Donec consectetur consectetur varius. Pellentesque dictum, mi sed rhoncus fringilla, massa ligula varius neque, eget accumsan libero quam non nulla. Nam iaculis mattis auctor. Fusce id cursus ipsum. Etiam finibus orci sit amet massa varius, in bibendum lorem luctus. Vestibulum vel massa non magna porttitor ornare. Nullam euismod a augue non malesuada.</p>
+						<a class="btn-btn-default">Read more</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<script src="scripts/jquery-3.2.1.js"></script>
+		<script src="scripts/bootstrap.js"></script>	
+		<script
+  src="http://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js"
+  integrity="sha256-Wp3wC/dKYQ/dCOUD7VUXXp4neLI5t0uUEF1pg0dFnAE="
+  crossorigin="anonymous"></script>
+		<script src="scripts/jq.js"></script>
+	
+	</body>
+	
+</html>
