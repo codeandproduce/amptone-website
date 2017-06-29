@@ -1,0 +1,240 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+#toggleNav{
+	display:hidden;
+	z-index:1000;
+	position:fixed;
+	overflow-y:scroll;
+	background-color:#dd5e5e;
+	left:0;
+	right:0;
+	padding:30px;
+	padding-left:40px;
+	top:-200%;
+	text-align:center;
+	opacity:0;
+}
+
+.noscroll{
+	overflow:hidden;
+}
+
+.toggle-title h1{
+	color:white;
+	letter-spacing: 6px;
+	font-size:35px;
+	font-weight:600;
+}
+
+.line{
+	width:80%;
+	height:3px;
+	background-color:white;
+	margin:auto;
+	margin-top:25px;
+}
+
+
+ol{
+	list-style: none;
+	padding:0;
+	padding-top:10px;
+	padding-bottom:30px;
+}
+
+input:focus{
+	outline:none;
+}
+button:focus{
+	outline:none
+}
+
+/* BACK NAVIGATION ====================================================== */
+
+.toggle-back{
+	width:100%;
+	height:70px;
+	position:relative;
+	float:left;
+}
+
+.arrow{
+	width:30px;
+	height:30px;
+	margin-right:15px;
+}
+
+.toggle-back button{
+	position:absolute;
+	font-size:15px;
+	color:white;
+	font-weight:600;
+	text-align:left;
+	top:0;
+	left:0;
+	bottom:0;
+	border:none;
+	background-color:transparent;	
+	z-index:2000;
+}
+
+.toggle-back button:hover{
+	opacity:0.5;
+}
+
+
+.toggle-back button > p{
+	border-bottom: 4px solid #FFF;
+	padding-bottom:4px;
+	float:right;
+}
+
+
+
+/* NAVIGATION ============================================= */
+
+.navigation-content ol>li{
+	padding-top:30px;
+}
+
+.navigation-content ol>li>a{
+	font-size:15px;
+	font-weight:300;
+	color:white;
+	letter-spacing: 2px;
+	text-decoration:none;
+}
+
+.navigation-content ol>li>a.active{
+	font-weight:bold;
+	color:#898989;
+	font-size:17px;
+}
+
+.navigation-content ol>li>a:hover{
+	font-weight:bold;
+	color:#898989;
+	font-size:17px;
+	transition: all ease-in-out 150ms
+}
+
+/* SUBSCRIBE ====================================================== */
+
+
+.subscribe-contain ol>li{
+	padding-top:15px;
+}
+
+.subscribe-contain ol>li>input{
+	width:250px;
+}
+
+.subscribe-contain p{
+	font-size:15px;
+	font-weight:300;
+	color:white;
+	text-decoration:none;
+}
+
+.subscribe-contain ol>li>a{
+	color:white;
+}
+.subscribe-contain ol>li>a:hover{
+	transition: all ease-in-out 150ms;
+
+	font-weight:bold;
+	color:#898989;
+	font-size:14px;
+}
+.termsLI{
+	margin-top:10px;
+}
+
+.subscribe-contain ol>li>button{
+	border:1px solid white;
+	background-color:transparent;
+	color:white;
+	padding:10px;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+.subscribe-contain ol>li>button:hover{
+	background-color:white;
+	border:none;
+	color:#b61515;
+}
+
+.buttonLI{
+	margin-top:10px;
+}
+.wrong{
+	display:none;
+}
+
+/* FOLLOW BUTTONS ====================================================== */
+
+.toggle-follow a{
+	color:white;
+	text-decoration: none;
+}
+
+
+.follow-contain ol{
+	width:80%;
+	margin:auto;
+}
+.follow-contain ol>li{
+	display: inline-block;
+}
+.aicon{
+	color:white;
+}
+.fa{
+  font-size:30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+       -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s; 
+}
+.fa-facebook{
+	padding:10px 17px;
+}
+.fa-linkedin{
+	padding:10px 14px;
+}
+.fa-youtube{
+	padding:10px 14px;
+}
+.fa-instagram{
+	padding:10px 14px;
+}
+.fa-snapchat-ghost{
+	padding:10px 12px;
+}
+.fa-soundcloud{
+	padding:10px 7px;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-instagram:hover {
+  background: #125688;
+}
+.fa-snapchat-ghost:hover{
+	background: #fffc00;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-soundcloud:hover {
+  background: #ff5500;
+}
