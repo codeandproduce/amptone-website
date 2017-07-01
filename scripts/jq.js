@@ -31,9 +31,51 @@ $(document).ready(function(){
 	});
 
 	docHeight = $(window);
+		
+	$("#navBar").hover(function(){
+		if($(window).scrollTop() > 0){
+		$("#animateStu").animate({
+			backgroundColor: "#000"
+		},{duration:500, queue: false});
+		$("#navBar").children().children().animate({
+			color: "#FFF"
+		},{duration:500, queue: false});
+		$("#menuText").animate({
+			borderBottomColor:"#FFF"
+		},{duration:500, queue: false});
+		$(".icon-bar").animate({
+			backgroundColor: "#FFF"
+		},{duration:500, queue: false});
+		}
+	},function(){
+		if($(window).scrollTop() > 0){
+		$("#animateStu").animate({
+			backgroundColor: "#FFF",
+			opacity: 1.0
+		},{duration:500, queue: false});
+		$("#navBar").children().children().animate({
+			color: "#000"
+		},{duration:500, queue: false});
+		$("#menuText").animate({
+			borderBottomColor:"#000"
+		},{duration:500, queue: false});
+		$(".icon-bar").animate({
+			backgroundColor: "#000"
+		},{duration:500, queue: false});
+	}
+	});
+	
 
 });
 
+
+	
+
+
+
+
+
+	
 var docHeight;
 $(window).resize(function(){
 	docHeight = $(window).height();
@@ -53,7 +95,7 @@ function bringNavUp(){
 		top: 0,
 		bottom:0,
 		opacity:1
-	},300);
+	},{ duration: 300, queue: false });
 	$("body").addClass("noscroll");
 	$("#toggleNav").css("z-index",101);
 }
@@ -64,7 +106,7 @@ $("#navBack").click(function(){
 		top: top1,
 		bottom:0,
 		opacity:0
-	},1000);
+	},{duration:1000, queue: false});
 	$("body").removeClass("noscroll");
 	$("#toggleNav").css("display","hidden");
 	$("#toggleNav").css("z-index",0);
@@ -72,39 +114,44 @@ $("#navBack").click(function(){
 
 var done = false;
 
+
 $(window).scroll(function(){
+	
 	var scroll = $(window).scrollTop();
+
 	if(scroll > 0){
 		if(!done){
 		$("#animateStu").animate({
 			backgroundColor: "#FFF",
 			opacity: 1.0
-		},500);
+		},{duration:500, queue: false});
 		$("#navBar").children().children().animate({
 			color: "#000"
-		},500);
+		},{duration:500, queue: false});
 		$("#menuText").animate({
 			borderBottomColor:"#000"
-		},500);
+		},{duration:500, queue: false});
 		$(".icon-bar").animate({
 			backgroundColor: "#000"
-		},500);
+		},{duration:500, queue: false});
 		done = true;
 		}
 	}else{
 		$("#animateStu").animate({
 			opacity: 0.0
-		},500);
+		},{duration:500, queue: false});
 		$("#navBar").children().children().animate({
 			color: "#FFF"
-		},500);
+		},{duration:500, queue: false});
 		$("#menuText").animate({
 			borderBottomColor:"#FFF"
-		},500);
+		},{duration:500, queue: false});
 		$(".icon-bar").animate({
 			backgroundColor: "#FFF"
-		},500);
+		},{duration:500, queue: false});
 		done = false;
 	}
+	
+	
 });
 	

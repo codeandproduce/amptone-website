@@ -26,8 +26,11 @@ body{
 	position:fixed;
 	height:90px;
 }
+
 .contain{
 	margin-top:15vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
 }
 .row{
 	text-align: center;
@@ -58,6 +61,7 @@ body{
 	background-position: center;
 	background-size:cover;
 	background-repeat: no-repeat;
+	position:relative;
 }
 img{
 	width:100%;
@@ -70,6 +74,52 @@ h3{
 	width:100%;
 	text-align:center;
 }
+.carousel-caption{
+	position:absolute;
+	bottom:5vh;
+}
+
+@media(min-height:600px){
+	.carousel-caption{
+		bottom:10vh;
+	}
+}
+.bun{
+	color:white;
+	border:1px solid white;
+	border-radius: 2px;
+	background:none;
+	font-size:25px;
+	font-weight:100;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:45px;
+	padding-right:45px;
+	margin-bottom:13vh;
+
+}
+@media(max-height:400px){
+	h3{
+		font-size:40px;
+	}
+	.bun{
+		font-size:15px;
+		padding-top:7px;
+		padding-bottom:7px;
+		padding-left:35px;
+		padding-right:35px;
+	}
+}
+@media(max-width:400px){
+	h3{
+		font-size:40px;
+	}
+	.bun{
+		font-size:20px;
+	}
+}
+
+
 #navBar .container{
 	background-color:transparent;
 	padding-top:20px;
@@ -112,20 +162,7 @@ ul.nav li a:hover{
 }
 
 
-.bun{
-	color:white;
-	border:1px solid white;
-	border-radius: 2px;
-	background:none;
-	font-size:25px;
-	font-weight:100;
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-left:45px;
-	padding-right:45px;
-	margin-bottom:13vh;
 
-}
 .navbar-toggle{
 	transform: scale(1.8, 1.8);
 	
