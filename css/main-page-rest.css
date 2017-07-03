@@ -22,19 +22,48 @@
 	margin:auto;
 	width:250px;
 	height:100%;
-	box-shadow: 0px 0px 5px #888888;
+	margin-bottom:50px;
 }
 
-@media(min-width:700px){
+.release-img{
+	position:relative;
+	width:100%;
+	height:auto;
+	margin:auto;
+	
+}
+.standard-title{
+	font-size:20px;
+	font-weight:600;
+}
+
+.this-standard{
+	font-size:16px;
+	opacity:0.7;
+	margin-top:3vh;
+	margin-bottom:3vh;
+}
+
+.standard-des{
+	color:gray;
+	opacity:0.7;
+	font-weight:600;
+	margin:3vh 10px;
+}
+.clickMore{
+	width:100%;
+	margin:10vh 0px;
+	text-align:center;
+	margin-top:0;
+}
+
+
+@media(min-width:990px){
 	.release-container{
-		width:250px;
+		width:300px;
 	}
 }
-@media(max-width:990px){
-	.release-container{
-		width:500px;
-	}
-}
+
 @media(min-width:1100px){
 	.release-container{
 		width:350px;
@@ -45,37 +74,29 @@
 		width:500px;
 	}
 }
-.release-img{
-	width:100%;
-	height:100%;
-	margin:auto;
-	border-bottom:3px solid black;
+
+
+@media(max-width:990px){
+	.release-container{
+		width:500px;
+	}
+}
+@media(max-width:700px){
+	.release-container{
+		width:95%;
+	}
+	.content h1{
+		font-size:9vw;
+	}
 	
 }
-.release-title{
-	font-size:20px;
-	margin:3vh 10px;
-	font-weight:600;
-}
-
-.this-release{
-	font-size:16px;
-	opacity:0.7;
-	margin-top:3vh;
-	margin-bottom:3vh;
-}
-
-.release-des{
-	color:gray;
-	opacity:0.7;
-	font-weight:600;
-	margin:3vh 10px;
+#third-col{
+		margin-bottom:10px;
 }
 
 
-
-/*RELEASE BUTTON*/
-.release-play{
+/*RELEASE BUTTONS*/
+.standard-extend{
 	background:none;
 	border: 2px solid rgba(120, 120, 120, 0.8);
 	padding:11px;
@@ -86,9 +107,35 @@
 	margin-top:10px;
 	margin-bottom:5vh;
 }
-.release-play:hover{
+.standard-extend:hover{
 	border: 2px solid #dd5e5e;
 	background-color:#dd5e5e;
 	color:white;
+}
+
+.click-more-standard{
+	border: 2px solid #dd5e5e;
+	background-color:#dd5e5e;
+	color:white;
+	padding:11px;
+	padding-left: 50px;
+	padding-right:50px;
+	font-size:2em;
+}
+
+.click-more-standard:hover{
+	background:none;
+	border: 2px solid rgba(120, 120, 120, 0.8);
+	color: rgba(120,120,120,1);
+}
+
+
+
+.event-contain{
+	margin:3vw;
+}
+
+.event-date{
+	font-size:16px;
 }
 

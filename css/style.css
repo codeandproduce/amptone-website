@@ -7,6 +7,7 @@ body{
 	margin:0;
 	padding:0;
 	font-family: 'Raleway', sans-serif;
+	
 }
 .container{
 	width:100%;
@@ -20,12 +21,7 @@ body{
 	background-color:transparent;
 	z-index:100;
 }
-#animateStu{
-	width:100%;
-	z-index:99;
-	position:fixed;
-	height:90px;
-}
+
 
 .contain{
 	margin-top:15vh;
@@ -119,6 +115,19 @@ h3{
 	}
 }
 
+#animateStu{
+	width:100%;
+	z-index:99;
+	position:fixed;
+	height:90px;
+}
+
+}
+@media(max-width:700px){
+	#animateStu{
+		height:45px;
+	}
+}
 
 #navBar .container{
 	background-color:transparent;
