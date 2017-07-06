@@ -9,7 +9,6 @@
 	left:0;
 	right:0;
 	padding:30px;
-	padding-left:40px;
 	top:-200%;
 	text-align:center;
 	opacity:0;
@@ -25,6 +24,7 @@
 	font-size:35px;
 	font-weight:600;
 }
+
 
 .line{
 	width:80%;
@@ -48,6 +48,7 @@ input:focus{
 button:focus{
 	outline:none
 }
+
 
 /* BACK NAVIGATION ====================================================== */
 
@@ -129,6 +130,15 @@ button:focus{
 	width:250px;
 }
 
+@media(max-width:350px){
+	.toggle-title h1{
+		font-size:25px;
+	}
+	.subscribe-contain ol>li>input{
+		width:200px;
+	}
+}
+
 .subscribe-contain p{
 	font-size:15px;
 	font-weight:300;
@@ -191,7 +201,7 @@ button:focus{
 	color:white;
 }
 .fa{
-  font-size:30px;
+  font-size:40px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;

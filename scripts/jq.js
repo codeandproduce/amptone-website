@@ -35,7 +35,7 @@ $(document).ready(function(){
 	$("#navBar").hover(function(){
 		if($(window).scrollTop() > 0){
 		$("#animateStu").animate({
-			backgroundColor: "#000"
+			backgroundColor: "#dd5e5e"
 		},{duration:500, queue: false});
 		$("#navBar").children().children().animate({
 			color: "#FFF"
@@ -97,7 +97,7 @@ function bringNavUp(){
 		opacity:1
 	},{ duration: 300, queue: false });
 	$("body").addClass("noscroll");
-	$("#toggleNav").css("z-index",101);
+	$("#toggleNav").css("z-index",107);
 }
 
 $("#navBack").click(function(){

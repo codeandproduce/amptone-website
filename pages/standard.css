@@ -1,0 +1,120 @@
+.menu-background{
+	width:100vw;
+	height:100vh;
+	background-image:url('../img/sample/sample5.jpg');
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	position:relative;
+	margin:0;
+	
+}
+
+.menu-background h1{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	margin-top:25vh;
+	color:white;
+	z-index: 10;
+	font-size:85px;
+}
+
+.background-artist-info{
+	position:absolute;
+	float:left;
+	margin-left:5vw;
+	margin-bottom:20vh;
+	color:#b61515;
+	background-color:white;
+	z-index:10;
+	padding:30px;
+	bottom:5vw;
+	
+}
+
+.background-artist-info h5{
+	font-size:40px;
+	font-weight:800;
+	width:100%;
+	text-align:center;
+}
+.background-artist-info p{
+	font-size:20px;
+	font-weight:300;
+	width:100%;
+	text-align:center;
+}
+
+.footer{
+	background-color:#dd5e5e;
+	bottom:0;
+	width:100%;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.footer img{
+	width:150px;
+	height:150px;
+	display:block;
+	margin:auto;
+}
+
+.footer h1{
+	width:100%;
+	text-align:center;
+	color:white;
+	font-size:50px;
+	font-weight:100;
+}
+.footer p{
+	width:100%;
+	text-align:center;
+	color:white;
+	font-size:15px;
+	font-weight:300;
+}
+
+.footer-button-contact{
+	padding:15px 40px;
+	background:none;
+	border:1.5px solid white;
+	color:white;
+	font-weight:100;
+	font-size:20px;
+	display:block;
+	margin:auto;
+	margin-bottom:50px;
+}
+
+.footer button.footer-button-contact:hover{
+	border-color:#dd5e5e;
+	background-color:white;
+	color:#dd5e5e;
+}
+.footer .follow-contain ol{
+	margin:0;
+	margin:auto;
+	text-align: center;
+}
+.footer .follow-contain ol li{
+	display:inline-block;
+}
+
+
+
+@media(max-width:700px){
+	.footer-button-contact{
+		padding:10px 30px;
+		font-size:18px;
+		border: 1px solid white;
+	}
+	.footer p{
+		font-size:10px;
+	}
+	.fa{
+		font-size:30px;
+	}
+	
+}
+
