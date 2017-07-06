@@ -1,17 +1,7 @@
-#1-artist{
-	background-image: url('../img/sample/sample1.jpg');
-}
-#2-artist{
-	background-image: url('../img/sample/sample4.jpg');
-}
-#3-artist{
-	background-image: url('../img/sample/sample1.jpg');
-}
-#4-artist{
-	background-image: url('../img/sample/sample6.jpg');
-}
 
-
+body{
+	background-color:#f1f1f1;
+}
 .row{
 	width:100%;
 	margin:auto;
@@ -76,18 +66,7 @@
 }
 
 @media(max-width:650px){
-	.menu-background h1{
-		font-size:70px;
-	}
-	.background-artist-info{
-		padding:20px;
-	}
-	.background-artist-info h5{
-		font-size:20px;
-	}
-	.background-artist-info p{
-		font-size:15px;
-	}
+	
 	.artist-content{
 		margin:1em;
 		margin-top:-5em;

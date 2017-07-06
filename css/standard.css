@@ -1,7 +1,6 @@
 .menu-background{
 	width:100vw;
 	height:100vh;
-	background-image:url('../img/sample/sample5.jpg');
 	background-position: center;
 	background-size:cover;
 	background-repeat: no-repeat;
@@ -101,9 +100,23 @@
 	display:inline-block;
 }
 
+.footer .fa{
+	font-size:40px;
+}
 
-
-@media(max-width:700px){
+@media(max-width:650px){
+	.menu-background h1{
+		font-size:70px;
+	}
+	.background-artist-info{
+		padding:20px;
+	}
+	.background-artist-info h5{
+		font-size:20px;
+	}
+	.background-artist-info p{
+		font-size:15px;
+	}
 	.footer-button-contact{
 		padding:10px 30px;
 		font-size:18px;
@@ -112,7 +125,7 @@
 	.footer p{
 		font-size:10px;
 	}
-	.fa{
+	.footer .fa{
 		font-size:30px;
 	}
 	

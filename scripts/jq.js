@@ -30,38 +30,29 @@ $(document).ready(function(){
 
 	});
 
-	docHeight = $(window);
+	docHeight = $(window).height();
 		
 	$("#navBar").hover(function(){
 		if($(window).scrollTop() > 0){
-		$("#animateStu").animate({
-			backgroundColor: "#dd5e5e"
-		},{duration:500, queue: false});
-		$("#navBar").children().children().animate({
-			color: "#FFF"
-		},{duration:500, queue: false});
-		$("#menuText").animate({
-			borderBottomColor:"#FFF"
-		},{duration:500, queue: false});
-		$(".icon-bar").animate({
-			backgroundColor: "#FFF"
-		},{duration:500, queue: false});
+			makeAnimateStuRed();
 		}
 	},function(){
-		if($(window).scrollTop() > 0){
-		$("#animateStu").animate({
-			backgroundColor: "#FFF",
-			opacity: 1.0
-		},{duration:500, queue: false});
-		$("#navBar").children().children().animate({
-			color: "#000"
-		},{duration:500, queue: false});
-		$("#menuText").animate({
-			borderBottomColor:"#000"
-		},{duration:500, queue: false});
-		$(".icon-bar").animate({
-			backgroundColor: "#000"
-		},{duration:500, queue: false});
+		if(!isItBottom){
+			if($(window).scrollTop() > 0){
+			$("#animateStu").animate({
+				backgroundColor: "#FFF",
+				opacity: 1.0
+			},{duration:500, queue: false});
+			$("#navBar").children().children().animate({
+				color: "#000"
+			},{duration:500, queue: false});
+			$("#menuText").animate({
+				borderBottomColor:"#000"
+			},{duration:500, queue: false});
+			$(".icon-bar").animate({
+				backgroundColor: "#000"
+			},{duration:500, queue: false});
+		}
 	}
 	});
 	
@@ -101,27 +92,49 @@ function bringNavUp(){
 }
 
 $("#navBack").click(function(){
-	var top1 = docHeight*-2;
+	var top1 = docHeight*2;
+	console.log(top1);
+	$("#toggleNav").css("height","docHeight");
 	$("#toggleNav").animate({
 		top: top1,
-		bottom:0,
-		opacity:0
-	},{duration:1000, queue: false});
+		bottom: top1/2
+	},{duration:300, queue: true});
 	$("body").removeClass("noscroll");
 	$("#toggleNav").css("display","hidden");
-	$("#toggleNav").css("z-index",0);
 });
 
 var done = false;
+var isItBottom = false;
 
 
 $(window).scroll(function(){
 	
 	var scroll = $(window).scrollTop();
+	var scrollDown = $(window).scrollBottom();
+	
+	if (scrollDown == 0){
+		makeAnimateStuRed();
+		isItBottom = true;
+	}else{
+		if(isItBottom){
+			makeAnimateStuWhite();
+			isItBottom = false;
+		}
+	}
+	if (!isItBottom){
+		if(scroll > 0){
+			if(!done){
+				makeAnimateStuWhite();
+			}
+		}else{
+			makeAnimateStuTransparent();
+		}
+	}
+	
+});
 
-	if(scroll > 0){
-		if(!done){
-		$("#animateStu").animate({
+function makeAnimateStuWhite(){
+	$("#animateStu").animate({
 			backgroundColor: "#FFF",
 			opacity: 1.0
 		},{duration:500, queue: false});
@@ -135,9 +148,10 @@ $(window).scroll(function(){
 			backgroundColor: "#000"
 		},{duration:500, queue: false});
 		done = true;
-		}
-	}else{
-		$("#animateStu").animate({
+}
+
+function makeAnimateStuTransparent(){
+	$("#animateStu").animate({
 			opacity: 0.0
 		},{duration:500, queue: false});
 		$("#navBar").children().children().animate({
@@ -150,8 +164,24 @@ $(window).scroll(function(){
 			backgroundColor: "#FFF"
 		},{duration:500, queue: false});
 		done = false;
-	}
-	
-	
-});
+}
+
+function makeAnimateStuRed(){
+	$("#animateStu").animate({
+			backgroundColor: "#dd5e5e"
+		},{duration:500, queue: false});
+		$("#navBar").children().children().animate({
+			color: "#FFF"
+		},{duration:500, queue: false});
+		$("#menuText").animate({
+			borderBottomColor:"#FFF"
+		},{duration:500, queue: false});
+		$(".icon-bar").animate({
+			backgroundColor: "#FFF"
+		},{duration:500, queue: false});
+}
+
+$.fn.scrollBottom = function() { 
+  return $(document).height() - this.scrollTop() - this.height(); 
+};
 	

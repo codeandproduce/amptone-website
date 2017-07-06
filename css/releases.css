@@ -1,0 +1,163 @@
+body{
+	background-color:#f1f1f1;
+}
+.release-content{
+	position:relative;
+	margin:3em;
+	margin-top:-10em;
+	z-index:100;
+	background-color:white;
+	padding:12px 45px;
+	padding-bottom:70px;
+	margin-bottom:0;
+}
+
+.release-content ul{
+	list-style: none;
+	display:block;
+	margin:auto;
+	margin-top:40px;
+	padding:0;
+	height:400px;
+	
+}
+.release-content ul li{
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+.imgli{
+	float:left;
+	width:400px;
+}
+.release-content h1{
+	color:#4b4b4b;
+	border-bottom: 3px solid #dd5e5e;
+	margin-top:60px;
+}
+
+.new-release-wrap{
+	width:100%;
+}
+
+.new-release-img{
+	width:400px;
+	height:400px;
+	display:inline-block;
+	float:left;
+	border:2px solid rgba(0,0,0,0.3);
+}
+.new-release-des{
+	display:inline-block;
+	padding: 50px;
+}
+.new-release-des h2{
+	font-size:40px;
+	font-weight:800;
+	margin-bottom:10px;
+	
+}
+.new-release-des a{
+	font-size:25px;
+	font-weight:300;
+	color:black;
+	text-decoration: none;
+}
+p.new-release-date{
+	margin-top:10px;
+	color:gray;
+	font-size:15px;
+	font-weight:300;
+}
+.new-release-div button{
+	border:1px solid rgba(0,0,0,0.4);
+	background:none;
+	color:black;
+	font-size:20px;
+	font-weight:300;
+	padding:15px 30px;
+	margin-top:80px;
+}
+
+.new-release-div button:hover{
+	border:1px solid #dd5e5e;
+	color:white;
+	background-color:#dd5e5e;
+}
+
+
+/* REST RELEASE*/
+
+.row{
+	margin-top:50px;
+}
+.release-block{
+	margin-top:40px;
+}
+img.release-block-img{
+	width:100%;
+	height:auto;
+	margin:auto;
+}
+.release-des{
+	margin-top:20px;
+}
+.release-block h4{
+	font-size:25px;
+	font-weight:600;
+	width:100%;
+	text-align:center;
+	margin-bottom:0;
+}
+.release-block h5{
+	font-size:15px;
+	font-weight:600;
+	width:100%;
+	text-align:center;
+	margin-bottom:10px;
+}
+.release-block p{
+	font-size:16px;
+	font-weight:300;
+	color:gray;
+	width:100%;
+	text-align:center;
+}
+.standard-extend{
+	background:none;
+	border: 2px solid rgba(120, 120, 120, 0.8);
+	padding:11px;
+	padding-left: 50px;
+	padding-right:50px;
+	color: rgba(120,120,120,1);
+	display:block;
+	margin:auto;
+	font-size:20px;
+	margin-top:20px;
+	margin-bottom:5vh;
+}
+.standard-extend:hover{
+	border: 2px solid #dd5e5e;
+	background-color:#dd5e5e;
+	color:white;
+}
+.click-more-standard{
+	border: 2px solid #dd5e5e;
+	background-color:#dd5e5e;
+	color:white;
+	padding:11px;
+	padding-left: 50px;
+	padding-right:50px;
+	font-size:2em;
+	display:block;
+	margin:auto;
+	margin-top:50px;
+}
+
+.click-more-standard:hover{
+	background:none;
+	border: 2px solid rgba(120, 120, 120, 0.8);
+	color: rgba(120,120,120,1);
+}
+
+
