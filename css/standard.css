@@ -6,9 +6,7 @@
 	background-repeat: no-repeat;
 	position:relative;
 	margin:0;
-	
 }
-
 .menu-background h1{
 	position:absolute;
 	width:100%;
@@ -19,6 +17,11 @@
 	font-size:85px;
 }
 
+@media(max-width:650px){
+	.menu-background h1{
+		font-size:60px;
+	}
+}
 .background-artist-info{
 	position:absolute;
 	float:left;
@@ -29,8 +32,8 @@
 	z-index:10;
 	padding:30px;
 	bottom:5vw;
-	
 }
+
 
 .background-artist-info h5{
 	font-size:40px;
@@ -53,10 +56,8 @@
 	padding-bottom:20px;
 }
 .footer img{
-	width:150px;
-	height:150px;
 	display:block;
-	margin:auto;
+	margin:40px auto;
 }
 
 .footer h1{
@@ -104,15 +105,29 @@
 	font-size:40px;
 }
 
-@media(max-width:650px){
+@media(max-width:950px){
 	.menu-background h1{
-		font-size:70px;
-	}
-	.background-artist-info{
-		padding:20px;
+		font-size:65px;
+		margin-top:28vh;
 	}
 	.background-artist-info h5{
-		font-size:20px;
+		font-size:25px;
+	}
+	.background-artist-info p{
+		font-size:25px;
+	}
+}
+@media(max-width:650px){
+	.menu-background h1{
+		font-size:55px;
+		margin-top:30vh;
+	}
+	.background-artist-info{
+		padding:18px;
+		margin-bottom:25vh;
+	}
+	.background-artist-info h5{
+		font-size:18px;
 	}
 	.background-artist-info p{
 		font-size:15px;
@@ -127,6 +142,17 @@
 	}
 	.footer .fa{
 		font-size:30px;
+	}
+	
+}
+
+@media(max-width:350px){
+	.menu-background h1{
+		font-size:50px;
+	}
+	.background-artist-info{
+		padding:18px;
+		margin-bottom:30vh;
 	}
 	
 }

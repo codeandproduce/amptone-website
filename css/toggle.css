@@ -179,7 +179,21 @@ button:focus{
 	margin-top:10px;
 }
 .wrong{
-	display:none;
+	display: none;
+}
+
+.subscribe-complete{
+	display: block;
+	transition: all ease-in-out 250ms;
+	opacity:1;
+}
+
+.subscribe-done{
+	margin:50px;
+	border:2px solid white;
+	font-size:40px;
+	padding:20px;
+	color:white;
 }
 
 /* FOLLOW BUTTONS ====================================================== */

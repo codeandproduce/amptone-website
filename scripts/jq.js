@@ -52,6 +52,7 @@ $(document).ready(function(){
 			$(".icon-bar").animate({
 				backgroundColor: "#000"
 			},{duration:500, queue: false});
+			$(".logoimg").toggleClass("blacklogoimg");
 		}
 	}
 	});
@@ -147,6 +148,7 @@ function makeAnimateStuWhite(){
 		$(".icon-bar").animate({
 			backgroundColor: "#000"
 		},{duration:500, queue: false});
+		$(".logoimg").toggleClass("blacklogoimg");		
 		done = true;
 }
 
@@ -163,7 +165,9 @@ function makeAnimateStuTransparent(){
 		$(".icon-bar").animate({
 			backgroundColor: "#FFF"
 		},{duration:500, queue: false});
+		$(".logoimg").removeClass("blacklogoimg");
 		done = false;
+		
 }
 
 function makeAnimateStuRed(){
@@ -179,6 +183,7 @@ function makeAnimateStuRed(){
 		$(".icon-bar").animate({
 			backgroundColor: "#FFF"
 		},{duration:500, queue: false});
+		$(".logoimg").toggleClass("blacklogoimg");
 }
 
 $.fn.scrollBottom = function() { 
